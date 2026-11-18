@@ -1,0 +1,89 @@
+{
+    "login": {
+        "title": "Login",
+        "namePlaceholder": "Enter Your Name",
+        "submitButton": "LOGIN",
+        "languageLabel": "Language",
+        "enLanguage": "English",
+        "faLanguage": "Persian"
+    },
+    "menu": {
+        "mode": "Mode",
+        "light": "Light",
+        "dark": "Dark",
+        "language": "Language",
+        "english": "En",
+        "persian": "Fa",
+        "exit": "Exit"
+    },
+    "header": {
+        "title": "Weather Dashboard",
+        "searchPlaceholder": "Search Your Location"
+    },
+    "currentWeather": {
+        "high": "High",
+        "low": "Low",
+        "feelsLike": "Feels Like"
+    },
+    "chart": {
+        "title": "Average Monthly Temprature"
+    },
+    "forecast": {
+        "title": "2 weeks Forecast",
+        "today": "Today"
+    },
+    "weatherConditions": {
+        "clear": "Sunny",
+        "clouds": "Cloudy",
+        "rain": "Rainy",
+        "drizzle": "Drizzle",
+        "thunderstorm": "Stormy",
+        "snow": "Snowy",
+        "mist": "Misty",
+        "haze": "Hazy"
+    },
+    "days": {
+        "sat": "Saturday",
+        "sun": "Sunday",
+        "mon": "Monday",
+        "tue": "Tuesday",
+        "wed": "Wednesday",
+        "thu": "Thursday",
+        "fri": "Friday"
+    },
+    "daysShort": {
+        "sat": "Sat",
+        "sun": "Sun",
+        "mon": "Mon",
+        "tue": "Tue",
+        "wed": "Wed",
+        "thu": "Thu",
+        "fri": "Fri"
+    },
+    "months": {
+        "m1": "Jan",
+        "m2": "Feb",
+        "m3": "Mar",
+        "m4": "Apr",
+        "m5": "May",
+        "m6": "Jun",
+        "m7": "Jul",
+        "m8": "Aug",
+        "m9": "Sep",
+        "m10": "Oct",
+        "m11": "Nov",
+        "m12": "Dec"
+    },
+    "footer": {
+        "copyright": "All rights of this site are reserved for Nadin Sadr Aria Engineering Company.",
+        "contactUs": "contact us"
+    },
+    "dashboard": {
+        "welcomeMessage": "Welcome, dear {{name}}!"
+    },
+    "errors": {
+    "searchFailed": "Error searching for city",
+    "fetchFailed": "Error connecting to weather server",
+    "unexpected": "An unexpected error occurred"
+  }
+}
