@@ -11,6 +11,7 @@ A modern, responsive, and bilingual (English / Persian) Weather Dashboard built 
 - **Smart City Search**: Autocomplete search bar powered by OpenWeather Geocoding API with localized city names.
 - **Bilingual Support (i18n)**: Seamless switching between English (`en`) and Persian (`fa`) with dynamic RTL/LTR layout adaptation.
 - **Dark & Light Themes**: Built-in theme switcher with custom palettes using Material UI.
+- **Private Routing**: Keep the dashboard page safe without login
 - **Performance Optimized**: Component-level code splitting (`React.lazy` & `Suspense`) and Vite `manualChunks` bundling optimization.
 
 ## 🛠️ Tech Stack
