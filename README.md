@@ -1,78 +1,42 @@
-# React + TypeScript + Vite
+# 🌦️ Weather Dashboard
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, responsive, and bilingual (English / Persian) Weather Dashboard built with React, TypeScript, Material UI, and Redux Toolkit. It provides real-time weather conditions, multi-day forecasts, and interactive city search with full RTL/LTR and Dark/Light theme support.
 
-Currently, two official plugins are available:
+## ✨ Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- **Real-Time Weather Data**: View current temperature, feels-like temperature, daily high/low, and weather conditions.
+- **Multi-Day Forecast**: Interactive forecast cards displaying upcoming days with dynamic weather icons.
+- **Smart City Search**: Autocomplete search bar powered by OpenWeather Geocoding API with localized city names.
+- **Bilingual Support (i18n)**: Seamless switching between English (`en`) and Persian (`fa`) with dynamic RTL/LTR layout adaptation.
+- **Dark & Light Themes**: Built-in theme switcher with custom palettes using Material UI.
+- **Performance Optimized**: Component-level code splitting (`React.lazy` & `Suspense`) and Vite `manualChunks` bundling optimization.
 
-## React Compiler
+## 🛠️ Tech Stack
 
-The React Compiler is enabled on this template. See [this documentation](https://react.dev/learn/react-compiler) for more information.
+- **Frontend**: React 18, TypeScript
+- **State Management**: Redux Toolkit (`createAsyncThunk`, `createSlice`)
+- **UI Framework**: Material UI (`@mui/material`, `@mui/icons-material`)
+- **Localization**: `react-i18next`, `i18next`, `stylis-plugin-rtl`
+- **Routnig**: React Router Dom
+- **HTTP Client**: Axios
+- **Build Tool**: Vite
 
-Note: This will impact Vite dev & build performances.
-You can also try [the experimental native React Compiler support in plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md#rust-react-compiler) by using `compiler: true` in the plugin options instead of using the Babel plugin.
+## 🚀 Getting Started
 
-## Expanding the ESLint configuration
+### Prerequisites
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- Node.js (v18 or higher recommended)
+- An API key from [OpenWeatherMap](https://openweathermap.org/api)
+  
+- To use your own key:
+  
+  VITE_OPENWEATHER_API_KEY=your_api_key_here
+  
+  VITE_OPENWEATHER_BASE_URL=[https://api.openweathermap.org/data/2.5](https://api.openweathermap.org/data/2.5)
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+### Installation
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-
-```
-
-You can also install [eslint-plugin-react-x](https://npmx.dev/package/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://npmx.dev/package/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-
-```
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/MMEslami123/weather-dashboard.git
+   cd weather-dashboard
