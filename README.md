@@ -1,4 +1,6 @@
 # 🌦️ Weather Dashboard
+<img width="1920" height="931" alt="image" src="https://github.com/user-attachments/assets/5382dab0-8d6d-41d3-b142-54fb7582082e" />
+
 
 A modern, responsive, and bilingual (English / Persian) Weather Dashboard built with React, TypeScript, Material UI, and Redux Toolkit. It provides real-time weather conditions, multi-day forecasts, and interactive city search with full RTL/LTR and Dark/Light theme support.
 
